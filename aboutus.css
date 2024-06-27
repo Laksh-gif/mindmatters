@@ -1,0 +1,126 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-image: url(img/info\ hub\ bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.about {
+  width: 100%;
+  padding: 78px 0px;
+  background-color: #070d29;
+}
+
+.about img {
+  height: auto;
+  width: 100%;
+  max-width: 420px;
+}
+
+.about-text {
+  width: 100%;
+  max-width: 550px;
+}
+
+.main {
+  width: 100%;
+  max-width: 1130px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+.about-text h1 {
+  color: white;
+  font-size: 4vw;
+  text-transform: capitalize;
+  margin-bottom: 20px;
+}
+
+.about-text h5 {
+  color: white;
+  font-size: 2vw;
+  text-transform: capitalize;
+  margin-bottom: 25px;
+  letter-spacing: 2px;
+}
+
+span {
+  color: #ff66c4;
+}
+
+.about-text p {
+  color: #fcfc;
+  letter-spacing: 1px;
+  line-height: 1.6;
+  font-size: 1.2vw;
+  margin-bottom: 45px;
+}
+
+button {
+  background: #ff66c4;
+  color: white;
+  text-decoration: none;
+  border: 2px solid transparent;
+  font-weight: bold;
+  padding: 13px 30px;
+  border-radius: 30px;
+  transition: 0.4s;
+}
+
+button:hover {
+  background: transparent;
+  border: 2px solid #ff66c4;
+}
+
+.idk {
+  text-decoration: none;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .about-text h1 {
+    font-size: 6vw;
+  }
+
+  .about-text h5 {
+    font-size: 4vw;
+  }
+
+  .about-text p {
+    font-size: 3vw;
+  }
+
+  button {
+    padding: 10px 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main {
+    flex-direction: column;
+  }
+
+  .about img {
+    max-width: 80%;
+  }
+
+  .about-text {
+    max-width: 90%;
+  }
+}

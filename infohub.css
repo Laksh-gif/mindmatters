@@ -1,0 +1,124 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(img/info\ hub\ bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.heading {
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 35px;
+  text-align: center;
+  color: white;
+}
+
+.content {
+  color: white;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.box {
+  height: auto;
+  width: 90%;
+  max-width: 330px;
+  margin: 20px;
+  border: 2px solid gray;
+  padding: 10px;
+}
+
+.box img {
+  width: 100%;
+  height: 200px;
+}
+
+.box p {
+  padding: 8px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.ablog1,
+.ablog2,
+.ablog3 {
+  border: 2px solid #50204d;
+  text-align: center;
+  border-radius: 10px;
+  width: 200px;
+  height: 32px;
+  line-height: 32px;
+  margin: 10px auto;
+}
+
+.ablog1 a,
+.ablog2 a,
+.ablog3 a {
+  text-decoration: none;
+  color: white;
+}
+
+.ablog1:hover,
+.ablog2:hover,
+.ablog3:hover {
+  background-color: #50204d;
+  transition: linear 0.5s;
+  border-radius: 20px;
+}
+
+.home {
+  width: 200px;
+  height: 45px;
+  border: 2px solid #000;
+  border-radius: 20px;
+  text-align: center;
+  margin: 30px auto;
+}
+
+.home a {
+  text-align: center;
+  line-height: 45px;
+  text-decoration: none;
+  color: white;
+}
+
+.home:hover {
+  background-color: #ff66c4;
+  border-radius: 20px;
+  transition: linear 1s;
+  color: white;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+  .box {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .heading {
+    font-size: 28px;
+  }
+
+  .box {
+    width: 100%;
+  }
+
+  .ablog1,
+  .ablog2,
+  .ablog3 {
+    width: 90%;
+  }
+
+  .home {
+    width: 90%;
+  }
+}

@@ -1,0 +1,104 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+body {
+  margin: 0;
+  padding: 0;
+  background-image: url(img/Landing\ Page.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.heading {
+  color: white;
+  text-align: center;
+  margin-top: 100px;
+}
+
+div.heading > h1 {
+  font-size: 75px;
+}
+
+div.heading > p {
+  font-size: 30px;
+  font-weight: 300;
+  text-transform: uppercase;
+}
+
+.buttons {
+  text-align: center;
+  margin-top: 50px;
+}
+
+.buttons > div {
+  border: 2px solid #ff66c4;
+  height: 45px;
+  display: inline-block;
+  width: 250px;
+  margin: 10px 20px;
+  transition: background-color 1s linear, color 1s linear;
+}
+
+.buttons a {
+  text-decoration: none;
+  color: #ff6668;
+  display: block;
+  line-height: 45px;
+}
+
+.buttons > div:hover {
+  background-color: #ff66c4;
+  border-radius: 20px;
+}
+
+.buttons a:hover {
+  color: white;
+  border-radius: 20px;
+}
+
+/* Responsive Styles */
+@media (max-width: 1200px) {
+  div.heading > h1 {
+    font-size: 60px;
+  }
+
+  div.heading > p {
+    font-size: 25px;
+  }
+
+  .buttons > div {
+    width: 200px;
+  }
+}
+
+@media (max-width: 768px) {
+  div.heading > h1 {
+    font-size: 50px;
+  }
+
+  div.heading > p {
+    font-size: 20px;
+  }
+
+  .buttons > div {
+    width: 180px;
+    margin: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  div.heading > h1 {
+    font-size: 40px;
+  }
+
+  div.heading > p {
+    font-size: 18px;
+  }
+
+  .buttons > div {
+    width: 100%;
+    margin: 10px 0;
+  }
+}

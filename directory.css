@@ -1,0 +1,92 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@0,100..700;1,100..700&display=swap");
+
+body {
+  margin: 0px;
+  padding: 0px;
+  background-image: url(img/info\ hub\ bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: "Josefin Sans", sans-serif;
+  color: white;
+}
+
+.heading {
+  color: white;
+  font-size: 2rem; /* Use relative units for better scaling */
+  text-align: center;
+  margin: 20px 0;
+}
+
+.people {
+  width: 100%;
+  max-width: 300px; /* Ensure it doesn't exceed this width */
+  margin: 20px auto; /* Center-align for small screens */
+  padding: 10px;
+  border-radius: 20px;
+  text-align: center;
+}
+
+.people img {
+  width: 100%;
+  height: 350px;
+  border-radius: 25px;
+}
+
+.people p {
+  font-size: 1.2rem;
+  margin: 10px 0;
+}
+
+.a {
+  width: 150px;
+  height: 40px;
+  background-color: #0081a7;
+  margin: 10px auto;
+  text-align: center;
+  line-height: 40px;
+  border-radius: 40px;
+}
+
+.a a {
+  text-decoration: none;
+  color: white;
+}
+
+.a:hover {
+  background-color: #00afb9;
+  transition: ease-out 0.5s;
+}
+
+.home {
+  height: 45px;
+  width: 200px;
+  text-align: center;
+  border: 2px solid #0081a7;
+  margin: 20px auto;
+  border-radius: 20px;
+}
+
+.home a {
+  text-decoration: none;
+  color: white;
+  line-height: 45px;
+}
+
+.home:hover {
+  background-color: #0081a7;
+  transition: linear 1s;
+}
+
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .people {
+    margin: 20px;
+  }
+}
